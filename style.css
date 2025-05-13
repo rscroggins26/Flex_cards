@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-image: url("https://knightstemplar.co/wp-content/uploads/2023/09/famous-medieval-castles.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 50px;
+  font-family:  monospace
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(114, 77, 77, 0.724);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 13px 13px 13px rgba(0, 0, 0, 9);
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 9);
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.role {
+    color:rgb(17, 11, 7);
+    font-family: Haettenschweiler, sans-serif
+}
+
+.bio {
+  margin: 1rem 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #a70906;
+  color: rgb(2, 2, 2);
+  font-family: Impact,'Arial Narrow Bold', sans-serif;
+  font-size:14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a70906;
+  color:rgb(226, 213, 213);
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; 
+    max-width: 320px;
+  }
+}
